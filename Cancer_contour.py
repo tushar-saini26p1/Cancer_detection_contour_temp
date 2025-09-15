@@ -5,7 +5,7 @@ from matplotlib.widgets import Cursor
 
 
 def extract_color_temp_mapping(color_bar):
-    # Convert color bar to HSV for SEGMENTATION
+    # Convert color bar HSV for SEGMENTATION
     hsv = cv2.cvtColor(color_bar, cv2.COLOR_BGR2HSV)
     h, w, _ = color_bar.shape
 
@@ -75,5 +75,6 @@ def main():
 
 if __name__ == "__main__":
     main()
+
 
 
